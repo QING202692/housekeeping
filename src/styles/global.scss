@@ -1,0 +1,84 @@
+// 家政服务系统 - 绿色主题
+$primary-green: #4CAF50;
+$primary-green-light: #81C784;
+$primary-green-dark: #388E3C;
+$accent-green: #66BB6A;
+$bg-light: #F1F8E9;
+$bg-soft: #FAFAFA;
+$text-primary: #2E7D32;
+$text-secondary: #558B2F;
+
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Microsoft YaHei', 'PingFang SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: $bg-soft;
+  color: #333;
+}
+
+// 覆盖 Element Plus 主题色
+:root {
+  --el-color-primary: #4CAF50;
+  --el-color-primary-light-3: #7CB342;
+  --el-color-primary-light-5: #AED581;
+  --el-color-primary-light-7: #C5E1A5;
+  --el-color-primary-light-8: #DCEDC8;
+  --el-color-primary-light-9: #F1F8E9;
+  --el-color-primary-dark-2: #2E7D32;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(76, 175, 80, 0.08);
+  margin: 16px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E8F5E9;
+
+  h2 {
+    margin: 0;
+    color: $text-primary;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.search-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.status-tag {
+  font-size: 12px;
+}
+
+// 滚动条美化
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5E1A5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9CCC65;
+}
